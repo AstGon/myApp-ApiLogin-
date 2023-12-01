@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.myappsinapi.app',
-  appName: 'myAppSinApi',
+  appName: 'myappsinapi',
   webDir: 'www',
   server: {
     androidScheme: 'https'

@@ -17,6 +17,7 @@ interface User {
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage {
+  foundUser: any;
   user = { email: '', password: '' };
   errorMessage: string = '';
 

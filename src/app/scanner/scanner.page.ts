@@ -10,7 +10,7 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['scanner.page.scss'],
 })
 export class ScannerPage {
-  isSupported = false;
+  isSupported = true;
   barcodes: Barcode[] = [];
   correoElectronico: any;
   nombre: any;
@@ -52,11 +52,11 @@ export class ScannerPage {
 
   async scan(): Promise<void> {
     try {
-      const granted = await this.requestPermissions();
-      if (!granted) {
-        this.presentAlert('Por favor, concede permisos de cámara para usar el escáner de códigos de barras.');
-        return;
-      }
+      // const granted = await this.requestPermissions();
+      // if (!granted) {
+      //   this.presentAlert('Por favor, concede permisos de cámara para usar el escáner de códigos de barras.');
+      //   return;
+      // }
 
       // Llama a la función startCamera() al hacer clic en el botón de escaneo
       this.startCamera();
